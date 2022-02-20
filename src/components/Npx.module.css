@@ -1,0 +1,51 @@
+.npx {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto 0;
+  padding: 0.8rem 1.4rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  color: var(--textSecondary);
+  background-color: var(--border-light);
+  border: 1px solid var(--border-light);
+}
+
+@media screen and (max-width: 600px) {
+  .npx {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+html[data-theme='dark'] .npx {
+  color: #fff;
+  background-color: #0d0d0d;
+  border: 1px solid #0d0d0d;
+}
+
+.button {
+  margin-top: 8px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(40%) sepia(14%) saturate(357%) hue-rotate(127deg) brightness(90%) contrast(86%);
+}
+
+html[data-theme='dark'] .button img {
+  filter: invert(100%) sepia(0%) saturate(7461%) hue-rotate(355deg) brightness(94%) contrast(113%);
+}
+
+.buttonCheck {
+  cursor: auto;
+}

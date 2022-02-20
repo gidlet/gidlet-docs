@@ -1,0 +1,136 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.container {
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.container h2,
+.bottomContainer h2 {
+  font-size: 2rem;
+}
+
+.container p {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container h2,
+  .bottomContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .container p {
+    font-size: 1.2rem;
+  }
+}
+
+.featuresSection {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featuresGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.featureContainer {
+  margin-bottom: 1rem;
+  padding: 0 0.5rem !important;
+}
+
+.feature {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-color: var(--border-light);
+  border-radius: 26px;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  background-size: cover;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (max-width: 966px) {
+  .feature {
+    height: 300px;
+    padding: 2rem 1rem;
+  }
+}
+
+html[data-theme='dark'] .feature {
+  background-color: var(--background-light);
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  opacity: 0.4;
+}
+
+html[data-theme='dark'] .icon {
+  opacity: 0.1;
+}
+
+.featureText {
+  height: auto;
+}
+
+@media screen and (min-width: 966px) {
+  .featureText {
+    height: 190px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .featureText {
+    height: 150px;
+  }
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+}
+
+.feature p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.bottomContainer {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
